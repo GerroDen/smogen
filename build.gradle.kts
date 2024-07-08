@@ -52,7 +52,7 @@ intellij {
     version = platformVersion
     type = platformType
     downloadSources = platformDownloadSources.toBoolean()
-    updateSinceUntilBuild = true
+    updateSinceUntilBuild = false
 
     // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
     setPlugins(*platformPlugins.split(',').map(String::trim).filter(String::isNotEmpty).toTypedArray())
