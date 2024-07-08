@@ -38,8 +38,11 @@ version = pluginVersion
 
 // Configure project's dependencies
 repositories {
-    mavenCentral()
-    jcenter()
+  mavenCentral()
+
+  intellijPlatform {
+    defaultRepositories()
+  }
 }
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.16.0")
